@@ -47,3 +47,7 @@
 	.carousel-inner .next        { left:  25%; }
 	.carousel-inner .prev		 { left: -25%; }	
 }
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
