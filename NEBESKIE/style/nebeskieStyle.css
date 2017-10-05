@@ -1,8 +1,9 @@
 ﻿.siteTopPanel {
-    padding-top:0.25%;
-    padding-bottom:0.25%;
-    background-color: #e7f0e3;
-    border-bottom: 1px solid #ccc;
+    padding-top:0.35%;
+    padding-bottom:0.35%;
+    background-color: #EBFFE6;
+    /*border-bottom: 1px solid #ccc;*/
+    color:#191919;
 }
 .siteFooter {
     padding-top:0.25%;
@@ -10,6 +11,14 @@
     background-color: #090909;
     color:white;
     border-bottom: 1px solid #090909;
+    font-size:x-small
+}
+.textColorBlack {
+color:#403d3d;
+}
+.textcolorGrey {
+color:#726f6f;
+font-size:small;
 }
 .siteAboveFooter {
     padding-top:0.25%;
@@ -17,13 +26,14 @@
     background-color: #282626;
     color:white;
     border-bottom: 1px solid #090909;
+    font-size:small;
 }
-.blok1 {
+/*.blok1 {
   height: 100%;
   background-image: url(http://cdn.wonderfulengineering.com/wp-content/uploads/2014/05/city-wallpaper-7.jpg);
   background-position: center center;
   background-size: cover; 
-}
+}*/
 .carousel-control 			 { width:  4%; }
 .carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
 @media (max-width: 767px) {
@@ -50,4 +60,54 @@
 .vertical-align {
     display: flex;
     align-items: center;
+}
+#burst-12 {
+    background:black;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    text-align: center;
+}
+#burst-12:before, #burst-12:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100px;
+    background: black;
+}
+#burst-12:before {
+    -webkit-transform: rotate(30deg);
+       -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+         -o-transform: rotate(30deg);
+}
+#burst-12:after {
+    -webkit-transform: rotate(60deg);
+       -moz-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+         -o-transform: rotate(60deg);
+}
+#circle {
+    width: 102px;
+    height: 102px;
+    background: black;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    position: absolute;
+    margin-top: -112px;
+    margin-left: 33px;
+}
+#circleB {
+    width: 106px;
+    height: 106px;
+    background: white;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    position: absolute;
+    margin-top: -114px;
+    margin-left: 31px;
 }
