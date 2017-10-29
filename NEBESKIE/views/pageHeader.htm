@@ -47,7 +47,7 @@
                                     <li><a href="#">history</a></li>
                                 </ul>
                             </li>
-                            <li><a href="ProductHome.htm">Products</a></li>
+                            <li><a onclick="scrollToProduct();" href="javascript:void(0);">Products</a></li>
                             <!-- <li><a href="#">careers</a></li>-->
                             <li><a href="#">downloads</a></li>
                             <li><a href="#">support</a></li>
@@ -79,3 +79,18 @@
         </nav>
     </div>
     <hr />
+
+<script>
+    function scrollToProduct()
+    {
+        var element = document.getElementById('NebeskieProduct');
+        if (typeof (element) != 'undefined' && element != null) {
+            $('html, body').animate({
+                scrollTop: $("#NebeskieProduct").offset().top
+            }, 1500);
+        }
+        else {
+            window.location.href = "home.htm#NebeskieProduct";
+        }
+    }
+</script>
