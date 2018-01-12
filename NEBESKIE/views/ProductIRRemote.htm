@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wifi Switch from Nebeskie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../style/lib/bootstrap.css" rel="stylesheet" />
+    <link href="../style/nebeskieStyle.css" rel="stylesheet" />
+    <link href="../style/lib/font-awesome.min.css" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:400,300,700" rel='stylesheet' type='text/css' />
+
+    <script src="../js/lib/jquery-1.12.3.min.js"></script>
+    <script src="../js/lib/bootstrap.min.js"></script>
+    <script>
+        $('.carousel[data-type="multi"] .item').each(function () {
+            var next = $(this).next();
+            if (!next.length) {
+                next = $(this).siblings(':first');
+            }
+            next.children(':first-child').clone().appendTo($(this));
+
+            for (var i = 0; i < 2; i++) {
+                next = next.next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+
+                next.children(':first-child').clone().appendTo($(this));
+            }
+        });
+    </script>
+</head>
+<body>
+    <div id="Pageheader">
+        <script>
+            $("#Pageheader").load("pageHeader.htm");
+        </script>
+    </div>
+
+    <div class="container textColorBlack">
+        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+            <div class="row text-capitalize ">
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                    <h3 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">IR-Emote
+                    </h3>
+                    <p style="color: rgb(31, 153, 0); font-size: 20px; margin-left: 15px;">&#x20b9; 0</p>
+                    <a style="margin-left: 15px;" class="text-lowercase">add To wish list</a> <span style="color: rgb(31, 153, 0); font-size: 15px; font-weight: bold;">></span>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                    <img src="http://placehold.it/400x300" alt="test" class="img-responsive" />
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <img src="http://placehold.it/400x300" alt="test" class="img-responsive" />
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <img src="http://placehold.it/400x300" alt="test" class="img-responsive" />
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <img src="http://placehold.it/400x300" alt="test" class="img-responsive" />
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <img src="http://placehold.it/400x300" alt="test" class="img-responsive" />
+                    </div>
+                </div>
+            </div>
+            <div>
+                <ul class="nav nav-tabs">
+                    <!-- add data-toggle attribute to the anchors -->
+                    <li class="active"><a data-toggle="tab" href="#Overview">Overview</a></li>
+                    <li><a data-toggle="tab" href="#CustomerReview">Customer Review</a></li>
+                    <li><a data-toggle="tab" href="#QA">Q&A</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="Overview" class="tab-pane fade in active">
+                        <div class="row  vertical-align">
+                            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                <!--<h4 class="text-capitalize">Control your lights and other appliance from anywhere
+                                </h4>-->
+                                <div class="textcolorGrey">
+                                    <p>
+                                        IR-Emote is another smart device which comes under the Earth Home umbrella of 
+                                        products and services. The state-of-the-art technology seamlessly 
+                                        replaces all the remotes at home with your smart phone.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <img src="http://placehold.it/400x300" alt="test" class="img-responsive" />
+                            </div>
+                        </div>
+                        <div class="row  vertical-align">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <img src="http://placehold.it/400x300" alt="test" class="img-responsive" />
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                <!-- <h4 class="text-capitalize">Schedule your lights and appliances</h4>-->
+                                <div class="textcolorGrey">
+                                    <p>
+                                        It effortlessly replicates all the controls of all of your Infra Red 
+                                        remotes and enables your smart phone to do the same job. 
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row  vertical-align">
+                            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                <!-- <h4 class="text-capitalize">Safe Home is a happy home</h4>-->
+                                <div class="textcolorGrey">
+                                    <p>
+                                        Gone are the days of safely keeping one remote for TV, one for AC, one for music 
+                                        system, and many more. With Earth Home app, control TV, AC, music system is a hassle free manner.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <img src="http://placehold.it/400x300" alt="test" class="img-responsive" />
+                            </div>
+                        </div>
+                        <div class="row  vertical-align">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <img src="http://placehold.it/400x300" alt="test" class="img-responsive" />
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                <!-- <h4 class="text-capitalize">Schedule your lights and appliances</h4>-->
+                                <div class="textcolorGrey">
+                                    <p>
+                                       With IR-Emote enabled homes, you can create ambience of your 
+                                        choice and taste. Pre-set the temperature of your room to ensure your comfort 
+                                        when you arrive home,. Set the controls to suit your requirements smartly with ultra ease.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="CustomerReview" class="tab-pane fade">
+                        <h4>Customer Review</h4>
+                        <!-- <p>Some content in menu 1.</p>-->
+                    </div>
+                    <div id="QA" class="tab-pane fade">
+                        <h4>Question & Answers</h4>
+                        <!--<p>Some content in menu 2.</p>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-offset-1 col-lg-2 col-md-2 hidden-sm hidden-xs">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 text-center" style="background: #d7d1d1; margin-top: 20px">
+                    <h4 class="text-uppercase">product support</h4>
+                    <p>
+                        <i class="glyphicon glyphicon-user"></i>Register Product
+                    </p>
+                    <p>
+                        <i class="glyphicon glyphicon-question-sign"></i>Customer Support
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 text-center text-capitalize" style="background: rgb(44, 178, 229); margin-top: 20px; min-height: 141px;">
+                    <div id="burst-12" style="margin-top: 20px; margin-bottom: 10px; margin-left: 33px">
+                    </div>
+                    <div id="circleB"></div>
+                    <div id="circle"></div>
+                    <p style="color: white; font-size: 22px; font-weight: bold; margin-top: -108px; margin-left: 47px; position: absolute; z-index: 10; max-width: 75px;">
+                        90 day return policy
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="PageFooter">
+        <script>
+            $("#PageFooter").load("pageFooter.htm");
+        </script>
+    </div>
+</body>
+</html>
