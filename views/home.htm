@@ -11,6 +11,7 @@
 
     <script src="../js/lib/jquery-1.12.3.min.js"></script>
     <script src="../js/lib/bootstrap.min.js"></script>
+    <script src="../js/lib/LazyImgLoad.min.js"></script>
 
 </head>
 <body>
@@ -43,16 +44,18 @@
                 </div>-->
             </div>
             <div class="item">
-                <a href="#">
-                    <img class="img-responsive" src="../img/30.gif" data-src="../img/Group.jpg" /></a>
+                <!--<a href="#">
+                    <img class="img-responsive" src="../img/30.gif" data-src="../img/home/Group.jpg" /></a>-->
+                <img class="img-responsive lazy" data-src="../img/home/Group.jpg"/>
                 <div class="carousel-caption">
                     <h3>Time to switch to IOT</h3>
                     <!--<p>Just Kitten Around</p>-->
                 </div>
             </div>
             <div class="item">
-                <a href="#">
-                    <img class="img-responsive" src="../img/30.gif" data-src="../img/Switches_ 1.jpg" /></a>
+               <!-- <a href="#">
+                    <img class="img-responsive" src="../img/30.gif" data-src="../img/home/Switches_1.jpg" /></a>-->
+                 <img class="img-responsive lazy" data-src="../img/home/Switches_1.jpg"/>
                 <div class="carousel-caption">
                     <h3>Meet Earth Home</h3>
                     <!--<p>Just Kitten Around</p>-->
@@ -141,7 +144,8 @@ At Nebeskie labs we work on new ideas and develop solutions. We believe  innovat
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0px!important;">
                 <!-- background: url('../img/30.gif') no-repeat; background-size: 100%;-->
-                <img src="../img/30.gif" data-src="../img/1.jpg" style="width: 100%" />
+                <!--<img src="../img/30.gif" data-src="../img/home/1.jpg" style="width: 100%" />-->
+                <img class=" img-responsive lazy" data-src="../img/home/1.jpg"/>
 
                 <div class="carousel-caption hidden-xs" style="padding-bottom: 10%;">
                     <button class="btn btn-default btn-lg" type="submit" onclick="location.href='ProductWifiSwitch.htm'">learn more <i class="glyphicon glyphicon-play"></i></button>
@@ -153,8 +157,8 @@ At Nebeskie labs we work on new ideas and develop solutions. We believe  innovat
             <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12" />
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0px!important;">
                 <!-- background: url('../img/30.gif') no-repeat; background-size: 100%;-->
-                <img src="../img/30.gif" data-src="../img/2.jpg" style="width: 100%" />
-
+                <!--<img src="../img/30.gif" data-src="../img/home/2.jpg" style="width: 100%" />-->
+                <img class=" img-responsive lazy" data-src="../img/home/2.jpg"/>
                 <div class="carousel-caption hidden-xs" style="padding-bottom: 10%;">
                     <button class="btn btn-default btn-lg" type="submit" onclick="location.href='ProductIRRemote.htm'"">learn more <i class="glyphicon glyphicon-play"></i></button>
                 </div>
@@ -165,7 +169,8 @@ At Nebeskie labs we work on new ideas and develop solutions. We believe  innovat
             <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12" />
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0px!important;">
                 <!-- background: url('../img/30.gif') no-repeat; background-size: 100%;-->
-                <img src="../img/30.gif" data-src="../img/3.jpg" style="width: 100%" />
+               <!-- <img src="../img/30.gif" data-src="../img/home/3.jpg" style="width: 100%" />-->
+                <img class=" img-responsive lazy" data-src="../img/home/3.jpg"/>
 
                 <div class="carousel-caption hidden-xs" style="padding-bottom: 10%;">
                     <button class="btn btn-default btn-lg" type="submit" onclick="location.href='ProductMonitorSaveEnergy.htm'"">learn more <i class="glyphicon glyphicon-play"></i></button>
@@ -177,7 +182,8 @@ At Nebeskie labs we work on new ideas and develop solutions. We believe  innovat
             <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12" />
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0px!important;">
                 <!-- background: url('../img/30.gif') no-repeat; background-size: 100%;-->
-                <img src="../img/30.gif" data-src="../img/4.jpg" style="width: 100%" />
+                <!--<img src="../img/30.gif" data-src="../img/home/4.jpg" style="width: 100%" />-->
+                <img class=" img-responsive lazy" data-src="../img/home/4.jpg"/>
 
                 <div class="carousel-caption hidden-xs" style="padding-bottom: 10%;">
                     <button class="btn btn-default btn-lg" type="submit"onclick="location.href='ProductKrayons.htm'"">learn more <i class="glyphicon glyphicon-play"></i></button>
@@ -334,3 +340,4 @@ At Nebeskie labs we work on new ideas and develop solutions. We believe  innovat
         }
     }, false)
 </script>
+

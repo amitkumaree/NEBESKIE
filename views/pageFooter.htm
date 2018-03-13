@@ -25,7 +25,7 @@
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
                 <h5>Reach Us</h5>
                 <ul class="list-unstyled">
-                    <li><a href="javascript:void(0);"href="#">Contact Us</a></li>
+                    <li><a href="ContactUs.htm">Contact Us</a></li>
                     <li><a href="javascript:void(0);">Support</a></li>
                     <li><a href="javascript:void(0);">Enquiry Form</a></li>
                     <li><a href="javascript:void(0);">Product Registration</a></li>
@@ -34,8 +34,8 @@
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
                 <h5>Downloads</h5>
                 <ul class="list-unstyled">
-                    <li><a href="javascript:void(0);">Brochure</a></li>
-                    <li><a href="javascript:void(0);">Technical Specification Sheet</a></li>
+                    <li><a href="../document/brochure-Earthome-low.pdf" target="_blank"">Brochure</a></li>
+                    <!--<li><a href="javascript:void(0);">Technical Specification Sheet</a></li>-->
                 </ul>
             </div>
         </div>
@@ -45,9 +45,9 @@
 <div id="footer" class="siteFooter">
     <div class="container-fluid">
         <div class="row">
-            <span class="pull-left col-md-5 col-lg-5 col-md-offset-2 col-lg-offset-2">Copyright@2017 Nebeskie</span>
-            <strong class="col-lg-3 col-md-3 pull-right">
-                <i class="fa fa-fw fa-facebook"></i>
+            <span style="padding-top:8px" class="pull-left col-md-5 col-lg-5 col-md-offset-2 col-lg-offset-2">Copyright@2017 Nebeskie</span>
+            <strong class="col-lg-3 col-md-3 pull-right" style="font-size: 20px;">
+                <a style="color:white!important" href="https://www.facebook.com/nebeskie/"><i class="fa fa-fw fa-facebook"></i></a>
                 <i class="fa fa-fw fa-google-plus-square"></i>
                 <i class="fa fa-fw fa-youtube"></i>
                 <i class="fa fa-fw fa-linkedin"></i>
@@ -71,4 +71,24 @@
             scrollTop: 0                       // Scroll to top of body
         }, 500);
     });
+</script>
+<script>
+    $(function () {
+        debugger;
+        $('.lazy').Lazy({
+            onFinishedAll: function () {
+                if (!this.config("autoDestroy"))
+                    this.destroy();
+            },
+            // your configuration goes here
+            scrollDirection: 'vertical',
+            effect: 'fadeIn',
+            visibleOnly: true,
+            onError: function (element) {
+                console.log('error loading ' + element.data('src'));
+            }
+
+        });
+    });
+
 </script>

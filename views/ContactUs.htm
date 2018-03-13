@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../style/lib/bootstrap.css" rel="stylesheet" />
+    <link href="../style/nebeskieStyle.css" rel="stylesheet" />
+    <link href="../style/lib/font-awesome.min.css" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:400,300,700" rel='stylesheet' type='text/css' />
+
+    <script src="../js/lib/jquery-1.12.3.min.js"></script>
+    <script src="../js/lib/bootstrap.min.js"></script>
+    <style>
+        #map {
+            height: 330px;
+            width: 100%;
+        }
+
+        .glyphicon-teal {
+            background: teal;
+            color: orange;
+        }
+
+        .glyphicon-ring .glyphicon-bordered {
+            font-size: 20px;
+            vertical-align: middle;
+            display: table-cell;
+        }
+
+        .glyphicon-ring {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 4px solid white;
+            color: white;
+            display: inline-table;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="Pageheader">
+        <script>
+            $("#Pageheader").load("pageHeader.htm");
+        </script>
+    </div>
+    <div id="map"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                <div class="glyphicon-ring glyphicon-teal">
+                    <span class="glyphicon glyphicon-envelope glyphicon-bordered"></span>
+                </div>
+                <h4 style="display:inline-block">info@nebeskie.com</h4>
+            </div>
+             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                <div class="glyphicon-ring glyphicon-teal">
+                    <span class="glyphicon glyphicon-user glyphicon-bordered"></span>
+                </div>
+                <h4 style="display:inline-block">+91 97650 38546</h4>
+            </div>
+        </div>
+    </div>
+    <script>
+        function initMap() {
+            var uluru = { lat: 12.925690, lng: 80.236206 };
+            //debugger;
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 18,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+                title: 'Nebeskie Labs'
+            });
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-o6u5dYedFT5XP3aVsXZsLvLj3HCORZc&callback=initMap">
+    </script>
+
+
+    <div id="PageFooter">
+        <script>
+            $("#PageFooter").load("pageFooter.htm");
+        </script>
+    </div>
+</body>
+</html>
