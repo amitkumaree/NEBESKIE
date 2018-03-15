@@ -18,7 +18,7 @@
                 <ul class="list-unstyled">
                     <li><a href="aboutUs.htm">About Us</a></li>
                     <li><a href="aboutUs.htm">Team</a></li>
-                    <li><a href="javascript:void(0);">NEWS & Media</a></li>
+                    <li><a href="javascript:void(0);">News & Media</a></li>
                     <li><a href="javascript:void(0);">Careers</a></li>
                 </ul>
             </div>
@@ -73,22 +73,15 @@
     });
 </script>
 <script>
-    $(function () {
-        debugger;
-        $('.lazy').Lazy({
-            onFinishedAll: function () {
-                if (!this.config("autoDestroy"))
-                    this.destroy();
-            },
-            // your configuration goes here
-            scrollDirection: 'vertical',
-            effect: 'fadeIn',
-            visibleOnly: true,
-            onError: function (element) {
-                console.log('error loading ' + element.data('src'));
+    window.addEventListener('load', function () {
+        var allimages = document.getElementsByTagName('img');
+        for (var i = 0; i < allimages.length; i++) {
+            // remove all style from the image
+            //allimages[i].removeAttribute("style");
+            //allimages[i].className += " img-responsive";
+            if (allimages[i].getAttribute('data-src')) {
+                allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
             }
-
-        });
-    });
-
+        }
+    }, false)
 </script>
